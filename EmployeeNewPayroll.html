@@ -73,6 +73,19 @@
                         <output class="salary-output" for="salary">40000</output>
                     </div>
             </div>
+            <script>
+                const salary = document.querySelector('#salary'); 
+                            const output= document.querySelector('.salary-output');
+                            output.textContent = salary.value; 
+                            salary.addEventListener('input', function() {
+                            output.textContent = salary.value;
+                            });
+                        
+            </script>
+            <div class="nativeDateTimePicker">
+                <label for="party"> Choose a Date and time</label>
+                <input type="datetime-local" id="party" name="party">
+            </div>
         </form>
     </div>
      </body>
